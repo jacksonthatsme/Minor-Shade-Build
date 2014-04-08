@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minor Shade</title>
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script src='js/stripe.js'></script>
+  <script src='js/jquery.payment.js'></script>
+  <link rel='stylesheet' href='sass/style.css'>
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body>
+  <div class="container form">
+    <h1>Payment Information</h1>
+    <form action="" method="POST" id="payment-form">
+      <span class="payment-errors"></span>
+      
+      <div class="form-row">
+        <input type="text" size="20" name="name-on-card"  class="full" placeholder="Name on the Card"/>
+        <label for="name-on-card">Name on the Card</label>
+      </div>
+    
+      <div class="form-row">
+        <input type="text" size="20" name="number" data-stripe="number" class="full cc-num" placeholder="Card Number"/>
+        <label for="number">Card Number</label>
+      </div>
+    
+      <div class="form-row">
+        <input type="text" size="5" name="cvc" data-stripe="cvc" placeholder="CVC" class="cc-cvc"/>
+        <label for="cvc">CVC</label>
+        <input type="text" name="expiry" class="cc-exp" data-stripe="exp" placeholder="Exp. Date MM/YYYY" />
+		<label for="expiry">Exp. Date MM/YYYY</label>
+      <button type="submit">Submit Payment</button>
+    </form>
+  </div>
+   <script src='js/minorshade.js'></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.clear {
+  clear: both;
+  margin: 0px; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+/* COLORS */
+/* VARIABLES */
+/* MIXINS */
+/* BASE */
+body {
+  margin: 0px auto;
+  font-size: 12px;
+  font-family: 'Droid Sans Mono';
+  color: white; }
+  body.product.red {
+    background-color: #801c1c; }
+    body.product.red .branding .logotype path {
+      fill: #801c1c; }
+
+.container {
+  margin: 0px auto;
+  width: 100%;
+  text-align: center; }
+  .container.form {
+    max-width: 400px;
+    background-color: #0b1221; }
+
+.form-row {
+  position: relative;
+  margin: 3em 0 0; }
+
+input {
+  font-size: 1.2em;
+  padding: .6em .6em .6em 1em;
+  background-color: #141b29;
+  font-family: 'Droid Sans Mono';
+  color: white;
+  outline: none;
+  border: 1px solid #ffffff;
+  letter-spacing: 1px; }
+  input.full {
+    width: 100%; }
+  input:focus {
+    background-color: #282e3b; }
+
+select {
+  font: 1.5em;
+  font-family: 'Droid Sans Mono';
+  -webkit-appearance: none;
+  padding: 1em 7em 1em 1.5em;
+  border-radius: 0;
+  background-color: #161c28;
+  outline: none;
+  border: 1px solid #ffffff;
+  color: #ffffff; }
+
+label {
+  position: absolute;
+  top: -2em;
+  padding: 0 0 0 1em;
+  left: 0.09em;
+  z-index: -1;
+  font-size: .8em;
+  letter-spacing: 1px;
+  animation: float-labels 300ms none ease-out;
+  -webkit-animation: float-labels 300ms none ease-out;
+  /* There is a bug sometimes pausing the animation. This avoids that.*/
+  animation-play-state: running !important;
+  -webkit-animation-play-state: running !important; }
+
+/* Label highlight effect also for non-JS browsers */
+input:not(.empty):focus + label {
+  color: #ffffff; }
+
+/* In JS Browsers the .empty class is assigned to empty inputs -> label is rendered like a placeholder in the input field */
+input.empty + label {
+  top: 0.1em;
+  left: 0;
+  font-size: 1.5em;
+  animation: none;
+  -webkit-animation: none; }
+
+/* The animation is a bit more complex than what is achievable with simple transitions, because I do not want the label to fly over my input. The place-holder label should fade out first and then appear again above the input text */
+@keyframes float-labels {
+  0% {
+    opacity: 1;
+    top: 0.1em;
+    font-size: 1.5em; }
+
+  20% {
+    font-size: 1.5em;
+    opacity: 0; }
+
+  30% {
+    top: 0.1em; }
+
+  50% {
+    opacity: 0;
+    font-size: 0.85em; }
+
+  100% {
+    top: -1em;
+    opacity: 1; } }
+
+@-webkit-keyframes float-labels {
+  0% {
+    opacity: 1;
+    color: #aaa;
+    top: 0.1em;
+    font-size: 1.5em; }
+
+  20% {
+    font-size: 1.5em;
+    opacity: 0; }
+
+  30% {
+    top: 0.1em; }
+
+  50% {
+    opacity: 0;
+    font-size: 0.85em; }
+
+  100% {
+    top: -1em;
+    opacity: 1; } }
+
+::-webkit-input-placeholder {
+  letter-spacing: 1px; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  letter-spacing: 1px; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  letter-spacing: 1px; }
+
+:-ms-input-placeholder {
+  letter-spacing: 1px; }
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 1px; }
+
+#model {
+  width: 520px;
+  height: 520px;
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat; }
+  #model.up {
+    background-position: -520px 0px; }
+  #model.up-left {
+    background-position: 0px 0px; }
+  #model.up-right {
+    background-position: -1040px 0px; }
+  #model.left {
+    background-position: 0px -520px; }
+  #model.front {
+    background-position: -520px -520px; }
+  #model.right {
+    background-position: -1040px -520px; }
+  #model.down-left {
+    background-position: 0px -1040px; }
+  #model.down {
+    background-position: -520px -1040px; }
+  #model.down-right {
+    background-position: -1040px -1040px; }
+
+section {
+  width: 100; }
+  section.model {
+    background-color: #a02424;
+    padding: 50px 0 0; }
+
+.branding {
+  position: fixed; }
