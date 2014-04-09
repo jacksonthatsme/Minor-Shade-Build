@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:700|PT+Mono);
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,21 +44,17 @@ html, body {
 /* BASE */
 body {
   margin: 0px auto;
-  font-size: 12px;
-  font-family: 'Droid Sans Mono';
+  font-size: 18px;
+  font-family: "PT Mono";
   color: white; }
-  body.product.red {
-    background-color: #801c1c; }
-    body.product.red .branding .logotype path {
-      fill: #801c1c; }
 
 .container {
   margin: 0px auto;
   width: 100%;
-  text-align: center; }
-  .container.form {
-    max-width: 400px;
-    background-color: #0b1221; }
+  padding: 0 5% 0; }
+
+section {
+  width: 100%; }
 
 .form-row {
   position: relative;
@@ -175,6 +171,12 @@ input.empty + label {
 
 h1 {
   font-size: 2em;
+  letter-spacing: 1px;
+  font-family: "PT Sans", sans-serif; }
+
+h3 {
+  font-size: .8em;
+  text-transform: uppercase;
   letter-spacing: 1px; }
 
 #model {
@@ -204,9 +206,40 @@ h1 {
 
 section {
   width: 100; }
+  section.product-description {
+    text-align: center; }
   section.model {
-    background-color: #a02424;
-    padding: 50px 0 0; }
+    padding: 50px 0 0;
+    text-align: center; }
 
-.branding {
-  position: fixed; }
+section.branding {
+  position: fixed;
+  padding: 2em 0 0; }
+  section.branding .logotype {
+    width: 271px;
+    height: 133px; }
+
+body.product {
+  /* ----RED----- */
+  /* ----GREEN----- */ }
+  body.product.red {
+    background-color: #a02424;
+    color: #a02424; }
+    body.product.red .branding .logotype path {
+      fill: #a02424; }
+    body.product.red section.model {
+      background-color: #a02424; }
+  body.product.green {
+    background-color: #1ba886;
+    color: #04664c; }
+    body.product.green .branding .logotype path {
+      fill: #1ba886; }
+    body.product.green section.model {
+      background-color: #169a7a; }
+  body.product.yellow {
+    background-color: #f79c39;
+    color: #b62c2c; }
+    body.product.yellow .branding .logotype path {
+      fill: #f79c39; }
+    body.product.yellow section.model {
+      background-color: #ea8536; }
