@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:700|PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,800,900,700,500);
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,8 +44,8 @@ html, body {
 /* BASE */
 body {
   margin: 0px auto;
-  font-size: 18px;
-  font-family: "PT Mono";
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
   color: white; }
 
 .container {
@@ -55,6 +55,11 @@ body {
 
 section {
   width: 100%; }
+
+.left-column {
+  width: 300px;
+  position: absolute;
+  height: 100%; }
 
 .form-row {
   position: relative;
@@ -170,76 +175,250 @@ input.empty + label {
   letter-spacing: 1px; }
 
 h1 {
-  font-size: 2em;
-  letter-spacing: 1px;
-  font-family: "PT Sans", sans-serif; }
+  font-size: 4.5em;
+  line-height: .8em;
+  font-weight: 900; }
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 900; }
 
 h3 {
-  font-size: .8em;
+  font-size: .9em;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800; }
+  h1 + h3 {
+    margin: 2em 0 0; }
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em; }
+  h3 + p {
+    margin: .3em 0 inherit; }
+
+.button {
+  text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: 1px; }
 
 #model {
-  width: 520px;
-  height: 520px;
+  width: 510px;
+  height: 504px;
   display: block;
-  margin: 0 auto;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 300%; }
   #model.up {
-    background-position: -520px 0px; }
+    background-position: 50% 0%; }
   #model.up-left {
-    background-position: 0px 0px; }
+    background-position: 0% 0%; }
   #model.up-right {
-    background-position: -1040px 0px; }
+    background-position: 100% 0%; }
   #model.left {
-    background-position: 0px -520px; }
+    background-position: 0% 50%; }
   #model.front {
-    background-position: -520px -520px; }
+    background-position: 50% 50%; }
   #model.right {
-    background-position: -1040px -520px; }
+    background-position: 100% 50%; }
   #model.down-left {
-    background-position: 0px -1040px; }
+    background-position: 0% 100%; }
   #model.down {
-    background-position: -520px -1040px; }
+    background-position: 50% 100%; }
   #model.down-right {
-    background-position: -1040px -1040px; }
+    background-position: 100% 100%; }
 
-section {
-  width: 100; }
-  section.product-description {
-    text-align: center; }
-  section.model {
-    padding: 50px 0 0;
-    text-align: center; }
+.edition-count {
+  height: 11em;
+  width: 11em;
+  border-radius: 6em;
+  margin: 3em auto;
+  padding: 3em 0 0; }
+  .edition-count span {
+    display: inline-block;
+    vertical-align: middle; }
+    .edition-count span.edition {
+      font-size: 4em;
+      font-weight: bold;
+      line-height: .9em;
+      padding: 0 .1em; }
+
+section.product {
+  padding: 12em 0 0; }
+  section.product .container {
+    position: relative; }
+  section.product .information {
+    position: absolute;
+    max-width: 300px; }
+    section.product .information p {
+      padding: 0 0 2em;
+      border-bottom: 2px solid white; }
+    section.product .information .price {
+      margin: 2em 0 0; }
+  section.product .model {
+    width: intrinsic;
+    margin-left: calc(5% + 250px); }
 
 section.branding {
-  position: fixed;
-  padding: 2em 0 0; }
+  padding: 1em 0 0;
+  position: absolute; }
   section.branding .logotype {
-    width: 271px;
-    height: 133px; }
+    width: 200px;
+    height: 120px; }
+    section.branding .logotype path {
+      fill: white; }
 
 body.product {
   /* ----RED----- */
-  /* ----GREEN----- */ }
+  /* ----GREEN----- */
+  /* ----YELLOW----- */ }
   body.product.red {
-    background-color: #a02424;
-    color: #a02424; }
+    background-color: #a02424; }
+    body.product.red section.product {
+      background: #a02424;
+      /* Old browsers */
+      background: -moz-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #a02424), color-stop(100%, #701919));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at bottom, #a02424 0%, #701919 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#701919',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
     body.product.red .branding .logotype path {
       fill: #a02424; }
-    body.product.red section.model {
-      background-color: #a02424; }
+    body.product.red .navigation {
+      color: #a02424; }
   body.product.green {
-    background-color: #1ba886;
-    color: #04664c; }
+    background-color: #04664c; }
+    body.product.green section.product {
+      background: #1ba886;
+      /* Old browsers */
+      background: -moz-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #1ba886), color-stop(100%, #12755d));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at bottom, #1ba886 0%, #12755d 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#12755d',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
     body.product.green .branding .logotype path {
       fill: #1ba886; }
-    body.product.green section.model {
-      background-color: #169a7a; }
+    body.product.green .navigation {
+      color: #1ba886; }
   body.product.yellow {
-    background-color: #f79c39;
-    color: #b62c2c; }
+    background-color: #b62c2c; }
+    body.product.yellow section.product {
+      background: #f79c39;
+      /* Old browsers */
+      background: -moz-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f79c39), color-stop(100%, #ac6d27));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at bottom, #f79c39 0%, #ac6d27 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#ac6d27',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
     body.product.yellow .branding .logotype path {
       fill: #f79c39; }
-    body.product.yellow section.model {
-      background-color: #ea8536; }
+    body.product.yellow .navigation {
+      color: #f79c39; }
+  body.product.blue {
+    background-color: #4d7cb7; }
+    body.product.blue section.product {
+      background: #83d3ea;
+      /* Old browsers */
+      background: -moz-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #83d3ea), color-stop(100%, #5b93a3));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at bottom, #83d3ea 0%, #5b93a3 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#5b93a3',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+    body.product.blue .branding .logotype path {
+      fill: #83d3ea; }
+    body.product.blue .navigation {
+      color: #83d3ea; }
+  body.product.grey {
+    background-color: #92a2a1; }
+    body.product.grey section.product {
+      background: #e5ddd2;
+      /* Old browsers */
+      background: -moz-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #e5ddd2), color-stop(100%, #a09a93));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at bottom, #e5ddd2 0%, #a09a93 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#a09a93',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+    body.product.grey .branding .logotype path {
+      fill: #e5ddd2; }
+    body.product.grey .navigation {
+      color: #e5ddd2; }
+
+section.navigation {
+  position: fixed;
+  bottom: 0; }
+  section.navigation nav {
+    padding: 0 0 1em; }
+    section.navigation nav ul li {
+      display: inline-block;
+      padding: 0 1.2em 0 0; }
+      section.navigation nav ul li a {
+        line-height: 1.7em;
+        font-weight: 400;
+        font-size: .9em;
+        letter-spacing: .1em;
+        border-bottom: 1px solid white; }
+  section.navigation .cart {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    right: 0;
+    position: absolute;
+    bottom: 0; }
+
+.button {
+  padding: 1em 1.5em;
+  border: 2px solid;
+  border-color: white;
+  width: intrinsic;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1em 0 0; }
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .button:active {
+    background-color: rgba(255, 255, 255, 0.4); }
