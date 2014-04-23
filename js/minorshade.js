@@ -10,36 +10,19 @@ $('input.cc-num').payment('formatCardNumber');
 $('.cc-exp').payment('formatCardExpiry');
 $('.cc-cvc').payment('formatCardCVC');
 
+$('#add-to-cart').click(function(){
+  function removeAnimation(){
+    $('#cart-count').removeClass('bounce');
+  }
+  $('#cart-count').addClass('bounce');
+  /* $('#cart-count').delay(5000).removeClass('bounce'); */
+  setTimeout(function() {
+    $('#cart-count').removeClass('bounce');
+  }, 1200);
+});
+
 var model = new HeadImage("model");
 model.setImageDirection();
 
-$('img.svg').each(function(){
-    var $img = $(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
 
-    $.get(imgURL, function(data) {
-        // Get the SVG tag, ignore the rest
-        var $svg = $(data).find('svg');
-
-        // Add replaced image's ID to the new SVG
-        if(typeof imgID !== 'undefined') {
-            $svg = $svg.attr('id', imgID);
-        }
-        // Add replaced image's classes to the new SVG
-        if(typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass+' replaced-svg');
-        }
-
-/*
-        // Remove any invalid XML tags as per http://validator.w3.org
-        $svg = $svg.removeAttr('xmlns:a');
-*/
-
-        // Replace image with new SVG
-        $img.replaceWith($svg);
-
-    }, 'xml');
-
-});
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

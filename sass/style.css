@@ -55,6 +55,8 @@ body {
 
 section {
   width: 100%; }
+  section.content {
+    padding: 12em 0 0; }
 
 .left-column {
   width: 300px;
@@ -175,8 +177,8 @@ input.empty + label {
   letter-spacing: 1px; }
 
 h1 {
-  font-size: 4.5em;
-  line-height: .8em;
+  font-size: 2.8em;
+  line-height: .9em;
   font-weight: 900; }
 
 h2 {
@@ -194,7 +196,8 @@ h3 {
 p {
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  max-width: 700px; }
   h3 + p {
     margin: .3em 0 inherit; }
 
@@ -229,35 +232,47 @@ p {
     background-position: 100% 100%; }
 
 .edition-count {
-  height: 11em;
-  width: 11em;
+  height: 8em;
+  width: 8em;
   border-radius: 6em;
-  margin: 3em auto;
-  padding: 3em 0 0; }
-  .edition-count span {
+  padding: 1.7em 0 0;
+  border: 2px solid white;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .edition-count h2 {
+    display: inline; }
+  .edition-count h2 + h2:before {
+    height: 40px;
+    width: 2px;
+    background-color: white;
+    content: "";
     display: inline-block;
-    vertical-align: middle; }
-    .edition-count span.edition {
-      font-size: 4em;
-      font-weight: bold;
-      line-height: .9em;
-      padding: 0 .1em; }
+    vertical-align: middle;
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    margin: 0 .3em; }
 
-section.product {
-  padding: 12em 0 0; }
-  section.product .container {
-    position: relative; }
-  section.product .information {
-    position: absolute;
-    max-width: 300px; }
-    section.product .information p {
-      padding: 0 0 2em;
-      border-bottom: 2px solid white; }
-    section.product .information .price {
-      margin: 2em 0 0; }
-  section.product .model {
-    width: intrinsic;
-    margin-left: calc(5% + 250px); }
+section.product .product-wrap {
+  position: relative; }
+section.product .information {
+  position: absolute;
+  max-width: 300px; }
+  section.product .information p {
+    padding: 0 0 2em;
+    border-bottom: 2px solid white; }
+  section.product .information .price {
+    margin: 2em 0 0; }
+section.product .model {
+  width: intrinsic;
+  margin-left: calc(5% + 250px); }
+
+.social {
+  position: absolute;
+  bottom: 1em; }
 
 section.branding {
   padding: 1em 0 0;
@@ -266,7 +281,7 @@ section.branding {
     width: 200px;
     height: 120px; }
     section.branding .logotype path {
-      fill: white; }
+      fill: #0b1221; }
 
 body.product {
   /* ----RED----- */
@@ -295,6 +310,19 @@ body.product {
       fill: #a02424; }
     body.product.red .navigation {
       color: #a02424; }
+      body.product.red .navigation a {
+        border-bottom-color: #a02424; }
+    body.product.red .button {
+      background-color: rgba(112, 25, 25, 0.5); }
+      body.product.red .button:hover {
+        background-color: rgba(112, 25, 25, 0.7); }
+      body.product.red .button:active {
+        background-color: rgba(112, 25, 25, 0.9); }
+    body.product.red .wayfinding {
+      border-color: #a02424; }
+      body.product.red .wayfinding a {
+        border-color: #a02424;
+        color: #a02424; }
   body.product.green {
     background-color: #04664c; }
     body.product.green section.product {
@@ -318,6 +346,19 @@ body.product {
       fill: #1ba886; }
     body.product.green .navigation {
       color: #1ba886; }
+      body.product.green .navigation a {
+        border-bottom-color: #1ba886; }
+    body.product.green .button {
+      background-color: rgba(18, 117, 93, 0.5); }
+      body.product.green .button:hover {
+        background-color: rgba(18, 117, 93, 0.7); }
+      body.product.green .button:active {
+        background-color: rgba(18, 117, 93, 0.9); }
+    body.product.green .wayfinding {
+      border-color: #1ba886; }
+      body.product.green .wayfinding a {
+        border-color: #1ba886;
+        color: #1ba886; }
   body.product.yellow {
     background-color: #b62c2c; }
     body.product.yellow section.product {
@@ -341,6 +382,19 @@ body.product {
       fill: #f79c39; }
     body.product.yellow .navigation {
       color: #f79c39; }
+      body.product.yellow .navigation a {
+        border-bottom-color: #f79c39; }
+    body.product.yellow .button {
+      background-color: rgba(172, 109, 39, 0.5); }
+      body.product.yellow .button:hover {
+        background-color: rgba(172, 109, 39, 0.7); }
+      body.product.yellow .button:active {
+        background-color: rgba(172, 109, 39, 0.9); }
+    body.product.yellow .wayfinding {
+      border-color: #f79c39; }
+      body.product.yellow .wayfinding a {
+        border-color: #f79c39;
+        color: #f79c39; }
   body.product.blue {
     background-color: #4d7cb7; }
     body.product.blue section.product {
@@ -364,6 +418,19 @@ body.product {
       fill: #83d3ea; }
     body.product.blue .navigation {
       color: #83d3ea; }
+      body.product.blue .navigation a {
+        border-bottom-color: #83d3ea; }
+    body.product.blue .button {
+      background-color: rgba(91, 147, 163, 0.5); }
+      body.product.blue .button:hover {
+        background-color: rgba(91, 147, 163, 0.7); }
+      body.product.blue .button:active {
+        background-color: rgba(91, 147, 163, 0.9); }
+    body.product.blue .wayfinding {
+      border-color: #83d3ea; }
+      body.product.blue .wayfinding a {
+        border-color: #83d3ea;
+        color: #83d3ea; }
   body.product.grey {
     background-color: #92a2a1; }
     body.product.grey section.product {
@@ -387,10 +454,61 @@ body.product {
       fill: #e5ddd2; }
     body.product.grey .navigation {
       color: #e5ddd2; }
+      body.product.grey .navigation a {
+        border-bottom-color: #e5ddd2; }
+    body.product.grey .button {
+      background-color: rgba(160, 154, 147, 0.5); }
+      body.product.grey .button:hover {
+        background-color: rgba(160, 154, 147, 0.7); }
+      body.product.grey .button:active {
+        background-color: rgba(160, 154, 147, 0.9); }
+    body.product.grey .wayfinding {
+      border-color: #e5ddd2; }
+      body.product.grey .wayfinding a {
+        border-color: #e5ddd2;
+        color: #e5ddd2; }
+  body.product.orange {
+    background-color: #c38c5b; }
+    body.product.orange section.product {
+      background: #fbd3ac;
+      /* Old browsers */
+      background: -moz-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #fbd3ac), color-stop(100%, #af9378));
+      /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+      /* Opera 12+ */
+      background: -ms-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+      /* IE10+ */
+      background: radial-gradient(ellipse at bottom, #fbd3ac 0%, #af9378 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#af9378',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+    body.product.orange .branding .logotype path {
+      fill: #fbd3ac; }
+    body.product.orange .navigation {
+      color: #fbd3ac; }
+      body.product.orange .navigation a {
+        border-bottom-color: #fbd3ac; }
+    body.product.orange .button {
+      background-color: rgba(175, 147, 120, 0.5); }
+      body.product.orange .button:hover {
+        background-color: rgba(175, 147, 120, 0.7); }
+      body.product.orange .button:active {
+        background-color: rgba(175, 147, 120, 0.9); }
+    body.product.orange .wayfinding {
+      border-color: #fbd3ac; }
+      body.product.orange .wayfinding a {
+        border-color: #fbd3ac;
+        color: #fbd3ac; }
 
 section.navigation {
   position: fixed;
   bottom: 0; }
+  section.navigation .container {
+    position: relative; }
   section.navigation nav {
     padding: 0 0 1em; }
     section.navigation nav ul li {
@@ -400,18 +518,30 @@ section.navigation {
         line-height: 1.7em;
         font-weight: 400;
         font-size: .9em;
+        color: inherit;
         letter-spacing: .1em;
-        border-bottom: 1px solid white; }
+        border-bottom: 1px solid inherit; }
+      section.navigation nav ul li #cart-count {
+        position: absolute;
+        bottom: 1;
+        margin-left: 4px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 2px 6px;
+        border-radius: 12px; }
   section.navigation .cart {
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
-    right: 0;
     position: absolute;
+    right: 0;
     bottom: 0; }
+    section.navigation .cart a {
+      line-height: 1.7em;
+      font-weight: 400;
+      font-size: .9em;
+      letter-spacing: .1em;
+      border-bottom: 1px solid white;
+      display: inline; }
 
 .button {
-  padding: 1em 1.5em;
+  padding: .8em 1.2em;
   border: 2px solid;
   border-color: white;
   width: intrinsic;
@@ -422,3 +552,66 @@ section.navigation {
     background-color: rgba(255, 255, 255, 0.2); }
   .button:active {
     background-color: rgba(255, 255, 255, 0.4); }
+
+.bounce {
+  animation: bounce .6s;
+  -webkit-animation: bounce .6s; }
+
+.relative {
+  position: relative; }
+
+@keyframes bounce {
+  0% {
+    bottom: 1px; }
+
+  40% {
+    bottom: 11px; }
+
+  50% {
+    bottom: 11px; }
+
+  80% {
+    bottom: 1;
+  /*
+  -webkit-transform: scaleX(1.4);
+    -moz-transform: scaleX(1.4);
+    -ms-transform: scaleX(1.4);
+    -o-transform: scaleX(1.4);
+*/ }
+
+  90% {
+    bottom: 3px; }
+
+  100% {
+    bottom: 1px; } }
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 1px; }
+
+  40% {
+    bottom: 11px; }
+
+  50% {
+    bottom: 11px; }
+
+  80% {
+    bottom: 1px;
+    /* -webkit-transform: scaleX(1.4); */ }
+
+  90% {
+    bottom: 3px; }
+
+  100% {
+    bottom: 1px; } }
+
+section.wayfinding {
+  text-align: center; }
+  section.wayfinding a {
+    display: inline-block;
+    padding: .4em 0; }
+    section.wayfinding a:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+
+body.text {
+  color: #0b1221; }
