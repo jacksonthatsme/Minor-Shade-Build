@@ -74,7 +74,7 @@ section {
 .right-column {
   position: absolute;
   right: 0; }
-  .relative-wrap .right-column {
+  section.product .right-column {
     top: 0; }
   li.product .right-column {
     bottom: 0; }
@@ -327,12 +327,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .red .branding .logotype path {
     fill: #a02424; }
-  .red .button {
-    background-color: rgba(35, 8, 8, 0.5); }
-    .red .button:hover {
-      background-color: rgba(35, 8, 8, 0.7); }
-    .red .button:active {
-      background-color: rgba(35, 8, 8, 0.9); }
 
 /* ----GREEN----- */
 .green {
@@ -361,12 +355,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .green .branding .logotype path {
     fill: #1ba886; }
-  .green .button {
-    background-color: rgba(6, 36, 29, 0.5); }
-    .green .button:hover {
-      background-color: rgba(6, 36, 29, 0.7); }
-    .green .button:active {
-      background-color: rgba(6, 36, 29, 0.9); }
 
 /* ----YELLOW----- */
 .yellow {
@@ -395,12 +383,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .yellow .branding .logotype path {
     fill: #f79c39; }
-  .yellow .button {
-    background-color: rgba(145, 78, 6, 0.5); }
-    .yellow .button:hover {
-      background-color: rgba(145, 78, 6, 0.7); }
-    .yellow .button:active {
-      background-color: rgba(145, 78, 6, 0.9); }
 
 .blue-pink {
   background-color: #e2605b; }
@@ -428,12 +410,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .blue-pink .branding .logotype path {
     fill: #bbe3e3; }
-  .blue-pink .button {
-    background-color: rgba(79, 182, 182, 0.5); }
-    .blue-pink .button:hover {
-      background-color: rgba(79, 182, 182, 0.7); }
-    .blue-pink .button:active {
-      background-color: rgba(79, 182, 182, 0.9); }
 
 .grey-blue {
   background-color: #92a2a1; }
@@ -461,12 +437,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .grey-blue .branding .logotype path {
     fill: #e5ddd2; }
-  .grey-blue .button {
-    background-color: rgba(173, 148, 113, 0.5); }
-    .grey-blue .button:hover {
-      background-color: rgba(173, 148, 113, 0.7); }
-    .grey-blue .button:active {
-      background-color: rgba(173, 148, 113, 0.9); }
 
 .orange {
   background-color: #c38c5b; }
@@ -494,12 +464,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .orange .branding .logotype path {
     fill: #fbd3ac; }
-  .orange .button {
-    background-color: rgba(244, 134, 26, 0.5); }
-    .orange .button:hover {
-      background-color: rgba(244, 134, 26, 0.7); }
-    .orange .button:active {
-      background-color: rgba(244, 134, 26, 0.9); }
 
 .pink-purple {
   background-color: #4f447c; }
@@ -527,12 +491,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .pink-purple .branding .logotype path {
     fill: #f7c9ca; }
-  .pink-purple .button {
-    background-color: rgba(227, 68, 71, 0.5); }
-    .pink-purple .button:hover {
-      background-color: rgba(227, 68, 71, 0.7); }
-    .pink-purple .button:active {
-      background-color: rgba(227, 68, 71, 0.9); }
 
 .coral {
   background-color: #398d90; }
@@ -560,12 +518,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .coral .branding .logotype path {
     fill: #f2d8c9; }
-  .coral .button {
-    background-color: rgba(212, 127, 78, 0.5); }
-    .coral .button:hover {
-      background-color: rgba(212, 127, 78, 0.7); }
-    .coral .button:active {
-      background-color: rgba(212, 127, 78, 0.9); }
 
 .yellow-red {
   background-color: #d3534d; }
@@ -593,12 +545,6 @@ section.branding {
     /* IE6-9 fallback on horizontal gradient */ }
   .yellow-red .branding .logotype path {
     fill: #ffe672; }
-  .yellow-red .button {
-    background-color: rgba(216, 178, 0, 0.5); }
-    .yellow-red .button:hover {
-      background-color: rgba(216, 178, 0, 0.7); }
-    .yellow-red .button:active {
-      background-color: rgba(216, 178, 0, 0.9); }
 
 section.navigation {
   position: fixed;
@@ -708,7 +654,24 @@ section.navigation {
 body.text section.content {
   margin-bottom: 8em; }
 
-body.home ul.index li.product {
-  width: 100%;
-  display: block;
-  padding: 2em 0; }
+body.home ul.index {
+  color: white; }
+  body.home ul.index li.product {
+    width: 100%;
+    display: block;
+    padding: 4em 0 3.5em; }
+    body.home ul.index li.product img {
+      width: 25em; }
+    body.home ul.index li.product .title {
+      padding: 0 0 2.5em; }
+    body.home ul.index li.product .right-column {
+      transition-duration: .1s;
+      -webkit-transition-duration: .1s;
+      -o-transition-duration: .1s;
+      -moz-transition-duration: .1s; }
+  body.home ul.index a:hover li.product .right-column {
+    bottom: 1.5em;
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -moz-transition-duration: .2s; }
