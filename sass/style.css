@@ -51,13 +51,16 @@ body {
   margin: 0px auto;
   width: 100%;
   padding: 0 5% 0; }
-  section.content .container {
-    position: relative; }
+
+.relative-wrap {
+  position: relative; }
 
 section {
   width: 100%; }
   section.content {
     padding: 12em 0 0; }
+    section.content.product {
+      padding: 9em 0 0; }
 
 .left-column {
   position: absolute;
@@ -71,7 +74,7 @@ section {
 .right-column {
   position: absolute;
   right: 0; }
-  .product-wrap .right-column {
+  .relative-wrap .right-column {
     top: 0; }
   li.product .right-column {
     bottom: 0; }
@@ -206,6 +209,8 @@ h3 {
   font-weight: 800; }
   h1 + h3 {
     margin: 2em 0 0; }
+  p + h3 {
+    margin-top: 1.2em; }
 
 p {
   font-weight: 400;
@@ -223,8 +228,8 @@ p {
   letter-spacing: 1px; }
 
 #model {
-  width: 510px;
-  height: 504px;
+  width: 540px;
+  height: 540px;
   display: block;
   background-repeat: no-repeat;
   background-size: 300%; }
@@ -273,14 +278,18 @@ section.product {
   color: white; }
   section.product .product-wrap {
     position: relative; }
-  section.product .information .price {
-    margin: 2em 0 0; }
+  section.product .information {
+    margin: 3em 0 0; }
+    section.product .information .price {
+      margin: 2em 0 0; }
 
 .social {
   position: absolute;
   bottom: 1em; }
   .social div {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: .7em; }
 
 section.branding {
   padding: 1em 0 0;
@@ -302,28 +311,28 @@ section.branding {
   .red section.product {
     background: #a02424;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #a02424), color-stop(100%, #701919));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #a02424), color-stop(100%, #170505));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #a02424 0%, #701919 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #a02424 0%, #701919 100%);
+    background: radial-gradient(ellipse at bottom, #a02424 0%, #170505 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#701919',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#170505',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
   .red .branding .logotype path {
     fill: #a02424; }
   .red .button {
-    background-color: rgba(112, 25, 25, 0.5); }
+    background-color: rgba(35, 8, 8, 0.5); }
     .red .button:hover {
-      background-color: rgba(112, 25, 25, 0.7); }
+      background-color: rgba(35, 8, 8, 0.7); }
     .red .button:active {
-      background-color: rgba(112, 25, 25, 0.9); }
+      background-color: rgba(35, 8, 8, 0.9); }
 
 /* ----GREEN----- */
 .green {
@@ -336,28 +345,28 @@ section.branding {
   .green section.product {
     background: #1ba886;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #1ba886), color-stop(100%, #12755d));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #1ba886), color-stop(100%, #041712));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #1ba886 0%, #12755d 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #1ba886 0%, #12755d 100%);
+    background: radial-gradient(ellipse at bottom, #1ba886 0%, #041712 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#12755d',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#041712',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
   .green .branding .logotype path {
     fill: #1ba886; }
   .green .button {
-    background-color: rgba(18, 117, 93, 0.5); }
+    background-color: rgba(6, 36, 29, 0.5); }
     .green .button:hover {
-      background-color: rgba(18, 117, 93, 0.7); }
+      background-color: rgba(6, 36, 29, 0.7); }
     .green .button:active {
-      background-color: rgba(18, 117, 93, 0.9); }
+      background-color: rgba(6, 36, 29, 0.9); }
 
 /* ----YELLOW----- */
 .yellow {
@@ -370,94 +379,94 @@ section.branding {
   .yellow section.product {
     background: #f79c39;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f79c39), color-stop(100%, #ac6d27));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f79c39), color-stop(100%, #824605));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #f79c39 0%, #ac6d27 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #f79c39 0%, #ac6d27 100%);
+    background: radial-gradient(ellipse at bottom, #f79c39 0%, #824605 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#ac6d27',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#824605',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
   .yellow .branding .logotype path {
     fill: #f79c39; }
   .yellow .button {
-    background-color: rgba(172, 109, 39, 0.5); }
+    background-color: rgba(145, 78, 6, 0.5); }
     .yellow .button:hover {
-      background-color: rgba(172, 109, 39, 0.7); }
+      background-color: rgba(145, 78, 6, 0.7); }
     .yellow .button:active {
-      background-color: rgba(172, 109, 39, 0.9); }
+      background-color: rgba(145, 78, 6, 0.9); }
 
-.blue {
-  background-color: #4d7cb7; }
-  .blue section.navigation {
-    color: #83d3ea;
-    border-color: #83d3ea; }
-    .blue section.navigation a {
-      border-bottom-color: #83d3ea; }
-  .blue section.product {
-    background: #83d3ea;
+.blue-pink {
+  background-color: #e2605b; }
+  .blue-pink section.navigation {
+    color: #bbe3e3;
+    border-color: #bbe3e3; }
+    .blue-pink section.navigation a {
+      border-bottom-color: #bbe3e3; }
+  .blue-pink section.product {
+    background: #bbe3e3;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #83d3ea), color-stop(100%, #5b93a3));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #83d3ea 0%, #5b93a3 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #83d3ea 0%, #5b93a3 100%);
+    background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#5b93a3',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-  .blue .branding .logotype path {
-    fill: #83d3ea; }
-  .blue .button {
-    background-color: rgba(91, 147, 163, 0.5); }
-    .blue .button:hover {
-      background-color: rgba(91, 147, 163, 0.7); }
-    .blue .button:active {
-      background-color: rgba(91, 147, 163, 0.9); }
+  .blue-pink .branding .logotype path {
+    fill: #bbe3e3; }
+  .blue-pink .button {
+    background-color: rgba(79, 182, 182, 0.5); }
+    .blue-pink .button:hover {
+      background-color: rgba(79, 182, 182, 0.7); }
+    .blue-pink .button:active {
+      background-color: rgba(79, 182, 182, 0.9); }
 
-.grey {
+.grey-blue {
   background-color: #92a2a1; }
-  .grey section.navigation {
+  .grey-blue section.navigation {
     color: #e5ddd2;
     border-color: #e5ddd2; }
-    .grey section.navigation a {
+    .grey-blue section.navigation a {
       border-bottom-color: #e5ddd2; }
-  .grey section.product {
+  .grey-blue section.product {
     background: #e5ddd2;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #e5ddd2), color-stop(100%, #a09a93));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #e5ddd2), color-stop(100%, #a78c67));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a09a93 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #e5ddd2 0%, #a09a93 100%);
+    background: radial-gradient(ellipse at bottom, #e5ddd2 0%, #a78c67 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#a09a93',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#a78c67',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-  .grey .branding .logotype path {
+  .grey-blue .branding .logotype path {
     fill: #e5ddd2; }
-  .grey .button {
-    background-color: rgba(160, 154, 147, 0.5); }
-    .grey .button:hover {
-      background-color: rgba(160, 154, 147, 0.7); }
-    .grey .button:active {
-      background-color: rgba(160, 154, 147, 0.9); }
+  .grey-blue .button {
+    background-color: rgba(173, 148, 113, 0.5); }
+    .grey-blue .button:hover {
+      background-color: rgba(173, 148, 113, 0.7); }
+    .grey-blue .button:active {
+      background-color: rgba(173, 148, 113, 0.9); }
 
 .orange {
   background-color: #c38c5b; }
@@ -469,28 +478,127 @@ section.branding {
   .orange section.product {
     background: #fbd3ac;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #fbd3ac), color-stop(100%, #af9378));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #fbd3ac), color-stop(100%, #f37e0c));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #af9378 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #fbd3ac 0%, #af9378 100%);
+    background: radial-gradient(ellipse at bottom, #fbd3ac 0%, #f37e0c 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#af9378',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#f37e0c',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
   .orange .branding .logotype path {
     fill: #fbd3ac; }
   .orange .button {
-    background-color: rgba(175, 147, 120, 0.5); }
+    background-color: rgba(244, 134, 26, 0.5); }
     .orange .button:hover {
-      background-color: rgba(175, 147, 120, 0.7); }
+      background-color: rgba(244, 134, 26, 0.7); }
     .orange .button:active {
-      background-color: rgba(175, 147, 120, 0.9); }
+      background-color: rgba(244, 134, 26, 0.9); }
+
+.pink-purple {
+  background-color: #4f447c; }
+  .pink-purple section.navigation {
+    color: #f7c9ca;
+    border-color: #f7c9ca; }
+    .pink-purple section.navigation a {
+      border-bottom-color: #f7c9ca; }
+  .pink-purple section.product {
+    background: #f7c9ca;
+    /* Old browsers */
+    background: -moz-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f7c9ca), color-stop(100%, #e1363a));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at bottom, #f7c9ca 0%, #e1363a 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#e1363a',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .pink-purple .branding .logotype path {
+    fill: #f7c9ca; }
+  .pink-purple .button {
+    background-color: rgba(227, 68, 71, 0.5); }
+    .pink-purple .button:hover {
+      background-color: rgba(227, 68, 71, 0.7); }
+    .pink-purple .button:active {
+      background-color: rgba(227, 68, 71, 0.9); }
+
+.coral {
+  background-color: #398d90; }
+  .coral section.navigation {
+    color: #f2d8c9;
+    border-color: #f2d8c9; }
+    .coral section.navigation a {
+      border-bottom-color: #f2d8c9; }
+  .coral section.product {
+    background: #f2d8c9;
+    /* Old browsers */
+    background: -moz-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f2d8c9), color-stop(100%, #d17641));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at bottom, #f2d8c9 0%, #d17641 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#d17641',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .coral .branding .logotype path {
+    fill: #f2d8c9; }
+  .coral .button {
+    background-color: rgba(212, 127, 78, 0.5); }
+    .coral .button:hover {
+      background-color: rgba(212, 127, 78, 0.7); }
+    .coral .button:active {
+      background-color: rgba(212, 127, 78, 0.9); }
+
+.yellow-red {
+  background-color: #d3534d; }
+  .yellow-red section.navigation {
+    color: #ffe672;
+    border-color: #ffe672; }
+    .yellow-red section.navigation a {
+      border-bottom-color: #ffe672; }
+  .yellow-red section.product {
+    background: #ffe672;
+    /* Old browsers */
+    background: -moz-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #ffe672), color-stop(100%, #c9a500));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at bottom, #ffe672 0%, #c9a500 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#c9a500',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .yellow-red .branding .logotype path {
+    fill: #ffe672; }
+  .yellow-red .button {
+    background-color: rgba(216, 178, 0, 0.5); }
+    .yellow-red .button:hover {
+      background-color: rgba(216, 178, 0, 0.7); }
+    .yellow-red .button:active {
+      background-color: rgba(216, 178, 0, 0.9); }
 
 section.navigation {
   position: fixed;
