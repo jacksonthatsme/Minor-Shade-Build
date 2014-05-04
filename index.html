@@ -116,46 +116,52 @@
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="faq.html">F.A.Q.</a></li>
-        <li><a href="">Twitter</a></li>
-        <li class="relative"><a href="">Cart</a><span id="cart-count">0</span></li>
+        <li class="relative">Cart<span id="cart-count">0</span></li>
       </ul>
     </nav>
   </div>
 </section>
-  <section class="product content">
-    <div class="container">
-      <div class="relative-wrap">
-        <div class="information left-column">
-          <h1>Minor Shade x Timespent</h1>
-          <h3>Color</h3>
-          <p>This is the hat description, this is the hat description</p>
-          <div class="wayfinding">
+  <section class="product content"><!-- section product -->
+    <div class="relative-wrap"><!-- relative wrap -->
+      <div class="model-wrap"><!--Model Wrap -->
+        <div class="model center-column relative-wrap"> <!-- model center column -->
+          <div id="model" class="front" style="background-image: url('images/timespent-sprite.png');"></div>
+          <div class="slideshow-nav slideshow-nav-next">&#10095;</div>
+          <div class="slideshow-nav slideshow-nav-prev">&#10094;</div>
+        </div><!-- End model center column -->
+      </div><!-- End Model Wrap -->
+      <div class="absolute top container"><!-- Absolute Container -->
+        <div class="relative-wrap"><!-- Relative Wrap -->
+          <div class="information absolute top left-column"> <!-- Information Left-Column -->
+            <h1>Minor Shade x Timespent</h1>
+            <h3>Color</h3>
+            <p>This is the hat description, this is the hat description</p>
+            <div class="wayfinding">
   <a href="" class="prev"><h3>&#65513; Prev Hat</h3></a><a href="" class="next"><h3>Next Hat &#65515;</h3></a>
 </div>
-          <div class="price">
-            <h2>$65.00</h2>
-          </div>
-          <div class="button" id="add-to-cart">
-              Add To Cart
-          </div>
-        </div>
-        <div class="social">
-          <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
-          <div class="twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-          </div>
-        </div>
-        <div class="model center-column">
-          <div id="model" style="background-image: url('images/timespent-sprite.png');"></div>
-        </div>
-        <div class="edition-count right-column">
-          <h2>3</h2>
-          <h2>5</h2>
-          <h3>Available</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="price">
+              <h2>$65.00</h2>
+            </div>
+            <div class="button" id="add-to-cart">
+                Add To Cart
+            </div>
+            <div class="social"><!-- Social -->
+              <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div><!-- Facebook -->
+              <div class="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+              </div><!-- Twitter -->
+            </div><!-- End Social -->
+          </div><!-- End Information Left-Column -->
+          <div class="edition-count absolute right-column"><!-- Edition Count Right-Column -->
+            <h2>3</h2>
+            <h2>5</h2>
+            <h3>Available</h3>
+          </div><!-- End Edition Count Right-Column -->
+        </div><!-- End Relative Wrap -->
+      </div><!-- End Absolute Container -->
+    </div><!-- End Relative Wrap -->
+  </section><!-- End section product -->
    <script src='js/minorshade.js'></script>
+   <script src='js/mobile_slideshow.js'></script>
 </body>
 </html>

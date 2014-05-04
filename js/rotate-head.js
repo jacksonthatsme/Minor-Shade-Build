@@ -27,7 +27,7 @@ function HeadImage(className){
     
     /* Calculating the borders of the image */
     var imageLeft = $(thisClass).offset().left + 100;
-    var imageRight = imageLeft + $(thisClass).width() - 100;
+    var imageRight = imageLeft + $(thisClass).width() - 250;
     var imageTop = $(thisClass).offset().top + 100;
     var imageBottom = imageTop + $(thisClass).height() - 200;
     

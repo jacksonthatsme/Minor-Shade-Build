@@ -1,15 +1,3 @@
-$("input:not([value]),input[value='']").addClass('empty');
-
-/* Input event handling */
-$('input').on('input keyup', function() {
-  
-      $(this).toggleClass('empty', !Boolean($(this).val()));
-});
-
-$('input.cc-num').payment('formatCardNumber');
-$('.cc-exp').payment('formatCardExpiry');
-$('.cc-cvc').payment('formatCardCVC');
-
 $('#add-to-cart').click(function(){
   function removeAnimation(){
     $('#cart-count').removeClass('bounce');
@@ -21,8 +9,11 @@ $('#add-to-cart').click(function(){
   }, 1200);
 });
 
+
+/*
 var model = new HeadImage("model");
 model.setImageDirection();
+*/
 
 
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
