@@ -334,7 +334,7 @@ section.product {
   margin: 4em 0 0; }
   .social div {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: text-top;
     padding-right: .7em; }
 
 .model-wrap {
@@ -375,161 +375,14 @@ section.branding {
     section.branding .logotype path {
       fill: #0b1221; }
 
-/* ----RED----- */
-.red {
-  background-color: #a02424; }
-  .red section.navigation {
-    color: #a02424;
-    border-color: #a02424; }
-    .red section.navigation a {
-      border-bottom-color: #a02424; }
-  .red section.product {
-    background: #a02424;
-    /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #a02424), color-stop(100%, #170505));
-    /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-    /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-    /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #a02424 0%, #170505 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#170505',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .red section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .red .model-wrap {
-      background: #a02424;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #a02424), color-stop(100%, #170505));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #a02424 0%, #170505 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #a02424 0%, #170505 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#170505',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .red .branding .logotype path {
-    fill: #a02424; }
-
-/* ----GREEN----- */
-.green {
-  background-color: #04664c; }
-  .green section.navigation {
-    color: #1ba886;
-    border-color: #1ba886; }
-    .green section.navigation a {
-      border-bottom-color: #1ba886; }
-  .green section.product {
-    background: #1ba886;
-    /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #1ba886), color-stop(100%, #041712));
-    /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-    /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-    /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #1ba886 0%, #041712 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#041712',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .green section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .green .model-wrap {
-      background: #1ba886;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #1ba886), color-stop(100%, #041712));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #1ba886 0%, #041712 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #1ba886 0%, #041712 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#041712',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .green .branding .logotype path {
-    fill: #1ba886; }
-
-/* ----YELLOW----- */
-.yellow {
-  background-color: #b62c2c; }
-  .yellow section.navigation {
-    color: #f79c39;
-    border-color: #f79c39; }
-    .yellow section.navigation a {
-      border-bottom-color: #f79c39; }
-  .yellow section.product {
-    background: #f79c39;
-    /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f79c39), color-stop(100%, #824605));
-    /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-    /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-    /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #f79c39 0%, #824605 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#824605',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .yellow section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .yellow .model-wrap {
-      background: #f79c39;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f79c39), color-stop(100%, #824605));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #f79c39 0%, #824605 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #f79c39 0%, #824605 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#824605',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .yellow .branding .logotype path {
-    fill: #f79c39; }
-
-.blue-pink {
-  background-color: #e2605b; }
-  .blue-pink section.navigation {
+.timespent {
+  background-color: #4b66b1; }
+  .timespent section.navigation {
     color: #bbe3e3;
     border-color: #bbe3e3; }
-    .blue-pink section.navigation a {
+    .timespent section.navigation a {
       border-bottom-color: #bbe3e3; }
-  .blue-pink section.product {
+  .timespent section.product {
     background: #bbe3e3;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
@@ -547,10 +400,10 @@ section.branding {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
     @media all and (max-width: 860px) {
-      .blue-pink section.product {
+      .timespent section.product {
         background: none; } }
   @media all and (max-width: 860px) {
-    .blue-pink .model-wrap {
+    .timespent .model-wrap {
       background: #bbe3e3;
       /* Old browsers */
       background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
@@ -567,248 +420,200 @@ section.branding {
       /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */ } }
-  .blue-pink .branding .logotype path {
+  .timespent .branding .logotype path {
     fill: #bbe3e3; }
 
-.grey-blue {
-  background-color: #92a2a1; }
-  .grey-blue section.navigation {
-    color: #e5ddd2;
-    border-color: #e5ddd2; }
-    .grey-blue section.navigation a {
-      border-bottom-color: #e5ddd2; }
-  .grey-blue section.product {
-    background: #e5ddd2;
+.bluestripe {
+  background-color: #6c685d; }
+  .bluestripe section.navigation {
+    color: #bbe3e3;
+    border-color: #bbe3e3; }
+    .bluestripe section.navigation a {
+      border-bottom-color: #bbe3e3; }
+  .bluestripe section.product {
+    background: #bbe3e3;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #e5ddd2), color-stop(100%, #a78c67));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #e5ddd2 0%, #a78c67 100%);
+    background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#a78c67',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
     @media all and (max-width: 860px) {
-      .grey-blue section.product {
+      .bluestripe section.product {
         background: none; } }
   @media all and (max-width: 860px) {
-    .grey-blue .model-wrap {
-      background: #e5ddd2;
+    .bluestripe .model-wrap {
+      background: #bbe3e3;
       /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #e5ddd2), color-stop(100%, #a78c67));
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
       /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #e5ddd2 0%, #a78c67 100%);
+      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #e5ddd2 0%, #a78c67 100%);
+      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
       /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#a78c67',GradientType=1 );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */ } }
-  .grey-blue .branding .logotype path {
-    fill: #e5ddd2; }
+  .bluestripe .branding .logotype path {
+    fill: #bbe3e3; }
 
-.orange {
-  background-color: #c38c5b; }
-  .orange section.navigation {
-    color: #fbd3ac;
-    border-color: #fbd3ac; }
-    .orange section.navigation a {
-      border-bottom-color: #fbd3ac; }
-  .orange section.product {
-    background: #fbd3ac;
+.fuckingsweet-green {
+  background-color: #df4755; }
+  .fuckingsweet-green section.navigation {
+    color: #bbe3e3;
+    border-color: #bbe3e3; }
+    .fuckingsweet-green section.navigation a {
+      border-bottom-color: #bbe3e3; }
+  .fuckingsweet-green section.product {
+    background: #bbe3e3;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #fbd3ac), color-stop(100%, #f37e0c));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #fbd3ac 0%, #f37e0c 100%);
+    background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#f37e0c',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
     @media all and (max-width: 860px) {
-      .orange section.product {
+      .fuckingsweet-green section.product {
         background: none; } }
   @media all and (max-width: 860px) {
-    .orange .model-wrap {
-      background: #fbd3ac;
+    .fuckingsweet-green .model-wrap {
+      background: #bbe3e3;
       /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #fbd3ac), color-stop(100%, #f37e0c));
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
       /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #fbd3ac 0%, #f37e0c 100%);
+      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #fbd3ac 0%, #f37e0c 100%);
+      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
       /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#f37e0c',GradientType=1 );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */ } }
-  .orange .branding .logotype path {
-    fill: #fbd3ac; }
+  .fuckingsweet-green .branding .logotype path {
+    fill: #bbe3e3; }
 
-.pink-purple {
-  background-color: #4f447c; }
-  .pink-purple section.navigation {
-    color: #f7c9ca;
-    border-color: #f7c9ca; }
-    .pink-purple section.navigation a {
-      border-bottom-color: #f7c9ca; }
-  .pink-purple section.product {
-    background: #f7c9ca;
+.frootloops {
+  background-color: #e1a950; }
+  .frootloops section.navigation {
+    color: #bbe3e3;
+    border-color: #bbe3e3; }
+    .frootloops section.navigation a {
+      border-bottom-color: #bbe3e3; }
+  .frootloops section.product {
+    background: #bbe3e3;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f7c9ca), color-stop(100%, #e1363a));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #f7c9ca 0%, #e1363a 100%);
+    background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#e1363a',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
     @media all and (max-width: 860px) {
-      .pink-purple section.product {
+      .frootloops section.product {
         background: none; } }
   @media all and (max-width: 860px) {
-    .pink-purple .model-wrap {
-      background: #f7c9ca;
+    .frootloops .model-wrap {
+      background: #bbe3e3;
       /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f7c9ca), color-stop(100%, #e1363a));
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
       /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #f7c9ca 0%, #e1363a 100%);
+      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #f7c9ca 0%, #e1363a 100%);
+      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
       /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#e1363a',GradientType=1 );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */ } }
-  .pink-purple .branding .logotype path {
-    fill: #f7c9ca; }
+  .frootloops .branding .logotype path {
+    fill: #bbe3e3; }
 
-.coral {
-  background-color: #398d90; }
-  .coral section.navigation {
-    color: #f2d8c9;
-    border-color: #f2d8c9; }
-    .coral section.navigation a {
-      border-bottom-color: #f2d8c9; }
-  .coral section.product {
-    background: #f2d8c9;
+.fuckingsweet-red {
+  background-color: #4ec19a; }
+  .fuckingsweet-red section.navigation {
+    color: #bbe3e3;
+    border-color: #bbe3e3; }
+    .fuckingsweet-red section.navigation a {
+      border-bottom-color: #bbe3e3; }
+  .fuckingsweet-red section.product {
+    background: #bbe3e3;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f2d8c9), color-stop(100%, #d17641));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #f2d8c9 0%, #d17641 100%);
+    background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#d17641',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
     @media all and (max-width: 860px) {
-      .coral section.product {
+      .fuckingsweet-red section.product {
         background: none; } }
   @media all and (max-width: 860px) {
-    .coral .model-wrap {
-      background: #f2d8c9;
+    .fuckingsweet-red .model-wrap {
+      background: #bbe3e3;
       /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f2d8c9), color-stop(100%, #d17641));
+      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
       /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #f2d8c9 0%, #d17641 100%);
+      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
       /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #f2d8c9 0%, #d17641 100%);
+      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
       /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#d17641',GradientType=1 );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
       /* IE6-9 fallback on horizontal gradient */ } }
-  .coral .branding .logotype path {
-    fill: #f2d8c9; }
-
-.yellow-red {
-  background-color: #d3534d; }
-  .yellow-red section.navigation {
-    color: #ffe672;
-    border-color: #ffe672; }
-    .yellow-red section.navigation a {
-      border-bottom-color: #ffe672; }
-  .yellow-red section.product {
-    background: #ffe672;
-    /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #ffe672), color-stop(100%, #c9a500));
-    /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-    /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-    /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #ffe672 0%, #c9a500 100%);
-    /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#c9a500',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .yellow-red section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .yellow-red .model-wrap {
-      background: #ffe672;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #ffe672), color-stop(100%, #c9a500));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #ffe672 0%, #c9a500 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #ffe672 0%, #c9a500 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#c9a500',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .yellow-red .branding .logotype path {
-    fill: #ffe672; }
+  .fuckingsweet-red .branding .logotype path {
+    fill: #bbe3e3; }
 
 section.navigation {
   position: fixed;
@@ -829,7 +634,7 @@ section.navigation {
         border-bottom-color: inherit; }
       section.navigation nav ul li #cart-count {
         position: absolute;
-        bottom: 1;
+        bottom: 0;
         margin-left: 4px;
         background-color: rgba(0, 0, 0, 0.2);
         padding: 2px 6px;
