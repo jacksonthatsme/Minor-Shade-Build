@@ -353,7 +353,8 @@ section.product {
   -moz-user-select: none;
   /* Firefox */
   -ms-user-select: none;
-  /* IE10+ */ }
+  /* IE10+ */
+  display: none; }
 
 .slideshow-nav-next {
   right: 0; }
