@@ -1,4 +1,30 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,600,800,900,700,500);
+@font-face {
+  font-family: 'minorshade';
+  src: url(../fonts/minorshade.eot?-lytv0z);
+  src: url(../fonts/minorshade.eot?#iefix-lytv0z) format("embedded-opentype"), url(../fonts/minorshade.woff?-lytv0z) format("woff"), url(../fonts/minorshade.ttf?-lytv0z) format("truetype"), url(../fonts/minorshade.svg?-lytv0z#minorshade) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon"], [class*="icon"] {
+  font-family: 'minorshade';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,50 +71,33 @@ html, body {
 body {
   margin: 0px auto;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  width: 100%; }
 
 .container {
   margin: 0px auto;
   width: 100%;
-  padding: 0 5% 0; }
+  padding: 0 5% 0;
+  max-width: 1300px; }
+
+section.product {
+  width: 100%;
+  padding-top: 8em; }
+  section.product.bottom {
+    position: absolute;
+    top: 0; }
+    @media all and (max-width: 860px) {
+      section.product.bottom {
+        position: static;
+        padding: 0 0 4em; } }
 
 .relative-wrap {
   position: relative; }
 
-section {
-  width: 100%; }
-  section.content {
-    padding: 12em 0 0; }
-    section.content.product {
-      padding: 9em 0 0; }
-      @media all and (max-width: 860px) {
-        section.content.product {
-          padding: 0; } }
-
-@media all and (max-width: 860px) {
-  .left-column {
-    width: 100%; } }
-
-.center-column {
-  width: intrinsic;
-  margin: 0 auto; }
-  @media all and (max-width: 860px) {
-    .center-column {
-      padding: 0; } }
-
 .right-column {
+  position: absolute;
+  top: 0;
   right: 0; }
-  li.product .right-column {
-    bottom: 0; }
-
-.absolute {
-  position: absolute; }
-  @media all and (max-width: 860px) {
-    .absolute {
-      position: static; } }
-
-.top {
-  top: 0; }
 
 .form-row {
   position: relative;
@@ -277,8 +286,7 @@ p {
   border-radius: 6em;
   padding: 1.7em 0 0;
   border: 2px solid white;
-  text-align: center;
-  margin: 3em 0 0; }
+  text-align: center; }
   @media all and (max-width: 860px) {
     .edition-count {
       display: none; } }
@@ -299,11 +307,6 @@ p {
 
 section.product {
   color: white; }
-  @media all and (max-width: 860px) {
-    section.product {
-      margin-bottom: 6em; } }
-  section.product .product-wrap {
-    position: relative; }
   section.product .information {
     margin: 3em 0 0;
     width: 300px; }
@@ -332,19 +335,24 @@ section.product {
 
 .social {
   margin: 4em 0 0; }
+  @media all and (max-width: 400px) {
+    .social {
+      margin: 1em 0 0; } }
   .social div {
     display: inline-block;
     vertical-align: text-top;
     padding-right: .7em; }
 
 .model-wrap {
-  padding-left: 10em; }
+  padding-left: 10em;
+  width: intrinsic;
+  margin: 0 auto; }
   @media all and (max-width: 860px) {
     .model-wrap {
-      padding: 7em 0 0; } }
+      padding: 0; } }
 
 .slideshow-nav {
-  bottom: 3em;
+  bottom: 5em;
   cursor: pointer;
   position: absolute;
   z-index: 100;
@@ -354,36 +362,44 @@ section.product {
   /* Firefox */
   -ms-user-select: none;
   /* IE10+ */
-  display: none; }
+  font-size: 2em;
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  padding: .5em .8em;
+  opacity: .7; }
 
 .slideshow-nav-next {
   right: 0; }
+  @media all and (max-width: 400px) {
+    .slideshow-nav-next {
+      right: -1em; } }
 
 .slideshow-nav-prev {
   left: 0; }
+  @media all and (max-width: 400px) {
+    .slideshow-nav-prev {
+      left: -.7em; } }
 
-section.branding {
-  padding: 1em 0 0;
+.branding {
   position: absolute;
   z-index: 500; }
-  section.branding .logotype {
-    width: 200px;
-    height: 120px; }
-    @media all and (max-width: 400px) {
-      section.branding .logotype {
-        height: 80px;
-        width: 160px; } }
-    section.branding .logotype path {
-      fill: #0b1221; }
+
+.logo {
+  padding: .3em 0 0;
+  font-size: 6em;
+  color: #0b1221; }
+  .logo a:hover {
+    opacity: .8; }
 
 .timespent {
   background-color: #4b66b1; }
-  .timespent section.navigation {
+  .timespent nav {
     color: #bbe3e3;
     border-color: #bbe3e3; }
-    .timespent section.navigation a {
+    .timespent nav a {
       border-bottom-color: #bbe3e3; }
-  .timespent section.product {
+  .timespent section.product.top {
     background: #bbe3e3;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
@@ -400,38 +416,19 @@ section.branding {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .timespent section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .timespent .model-wrap {
-      background: #bbe3e3;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .timespent .branding .logotype path {
-    fill: #bbe3e3; }
+  .timespent .logo {
+    color: #bbe3e3; }
+  .timespent .slideshow-nav {
+    background-color: #bbe3e3; }
 
 .bluestripe {
   background-color: #6c685d; }
-  .bluestripe section.navigation {
+  .bluestripe nav {
     color: #bbe3e3;
     border-color: #bbe3e3; }
-    .bluestripe section.navigation a {
+    .bluestripe nav a {
       border-bottom-color: #bbe3e3; }
-  .bluestripe section.product {
+  .bluestripe section.product.top {
     background: #bbe3e3;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
@@ -448,38 +445,19 @@ section.branding {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .bluestripe section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .bluestripe .model-wrap {
-      background: #bbe3e3;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .bluestripe .branding .logotype path {
-    fill: #bbe3e3; }
+  .bluestripe .logo {
+    color: #bbe3e3; }
+  .bluestripe .slideshow-nav {
+    background-color: #bbe3e3; }
 
 .fuckingsweet-green {
   background-color: #df4755; }
-  .fuckingsweet-green section.navigation {
+  .fuckingsweet-green nav {
     color: #bbe3e3;
     border-color: #bbe3e3; }
-    .fuckingsweet-green section.navigation a {
+    .fuckingsweet-green nav a {
       border-bottom-color: #bbe3e3; }
-  .fuckingsweet-green section.product {
+  .fuckingsweet-green section.product.top {
     background: #bbe3e3;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
@@ -496,86 +474,48 @@ section.branding {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .fuckingsweet-green section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .fuckingsweet-green .model-wrap {
-      background: #bbe3e3;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .fuckingsweet-green .branding .logotype path {
-    fill: #bbe3e3; }
+  .fuckingsweet-green .logo {
+    color: #bbe3e3; }
+  .fuckingsweet-green .slideshow-nav {
+    background-color: #bbe3e3; }
 
 .frootloops {
-  background-color: #e1a950; }
-  .frootloops section.navigation {
-    color: #bbe3e3;
-    border-color: #bbe3e3; }
-    .frootloops section.navigation a {
-      border-bottom-color: #bbe3e3; }
-  .frootloops section.product {
-    background: #bbe3e3;
+  background-color: #7c92cc; }
+  .frootloops nav {
+    color: #f7f4cb;
+    border-color: #f7f4cb; }
+    .frootloops nav a {
+      border-bottom-color: #f7f4cb; }
+  .frootloops section.product.top {
+    background: #f7f4cb;
     /* Old browsers */
-    background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
+    background: -moz-radial-gradient(bottom, ellipse cover, #f7f4cb 0%, #e1d539 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
+    background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #f7f4cb), color-stop(100%, #e1d539));
     /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
+    background: -webkit-radial-gradient(bottom, ellipse cover, #f7f4cb 0%, #e1d539 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
+    background: -o-radial-gradient(bottom, ellipse cover, #f7f4cb 0%, #e1d539 100%);
     /* Opera 12+ */
-    background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
+    background: -ms-radial-gradient(bottom, ellipse cover, #f7f4cb 0%, #e1d539 100%);
     /* IE10+ */
-    background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
+    background: radial-gradient(ellipse at bottom, #f7f4cb 0%, #e1d539 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#e1d539',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .frootloops section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .frootloops .model-wrap {
-      background: #bbe3e3;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .frootloops .branding .logotype path {
-    fill: #bbe3e3; }
+  .frootloops .logo {
+    color: #f7f4cb; }
+  .frootloops .slideshow-nav {
+    background-color: #f7f4cb; }
 
 .fuckingsweet-red {
   background-color: #4ec19a; }
-  .fuckingsweet-red section.navigation {
+  .fuckingsweet-red nav {
     color: #bbe3e3;
     border-color: #bbe3e3; }
-    .fuckingsweet-red section.navigation a {
+    .fuckingsweet-red nav a {
       border-bottom-color: #bbe3e3; }
-  .fuckingsweet-red section.product {
+  .fuckingsweet-red section.product.top {
     background: #bbe3e3;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
@@ -592,54 +532,40 @@ section.branding {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
-    @media all and (max-width: 860px) {
-      .fuckingsweet-red section.product {
-        background: none; } }
-  @media all and (max-width: 860px) {
-    .fuckingsweet-red .model-wrap {
-      background: #bbe3e3;
-      /* Old browsers */
-      background: -moz-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(radial, bottom center, 0px, center center, 100%, color-stop(0%, #bbe3e3), color-stop(100%, #48aeae));
-      /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* Opera 12+ */
-      background: -ms-radial-gradient(bottom, ellipse cover, #bbe3e3 0%, #48aeae 100%);
-      /* IE10+ */
-      background: radial-gradient(ellipse at bottom, #bbe3e3 0%, #48aeae 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='color', endColorstr='#48aeae',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ } }
-  .fuckingsweet-red .branding .logotype path {
-    fill: #bbe3e3; }
+  .fuckingsweet-red .logo {
+    color: #bbe3e3; }
+  .fuckingsweet-red .slideshow-nav {
+    background-color: #bbe3e3; }
 
-section.navigation {
+nav {
   position: fixed;
-  bottom: 0; }
-  section.navigation .container {
-    position: relative; }
-  section.navigation nav {
-    padding: 0 0 1em; }
-    section.navigation nav ul li {
-      display: inline-block;
-      padding: 0 1.2em 0 0; }
-      section.navigation nav ul li a {
-        line-height: 1.7em;
-        font-weight: 400;
-        font-size: .9em;
-        letter-spacing: .1em;
-        border-bottom: 1px solid;
-        border-bottom-color: inherit; }
-      section.navigation nav ul li #cart-count {
-        position: absolute;
-        bottom: 0;
-        margin-left: 4px;
-        background-color: rgba(0, 0, 0, 0.2);
-        padding: 2px 6px;
-        border-radius: 12px; }
+  bottom: 1em; }
+  @media all and (max-width: 860px) {
+    nav {
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      background-color: #0b1221;
+      padding: .4em 0;
+      z-index: 400; } }
+  nav ul li {
+    display: inline-block;
+    padding: 0 1.2em 0 0;
+    line-height: 1.7em;
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: .1em; }
+    nav ul li a {
+      border-bottom: 1px solid;
+      border-bottom-color: inherit; }
+    nav ul li #cart-count {
+      position: absolute;
+      bottom: 0;
+      margin-left: 4px;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 0px 6px;
+      border-radius: 12px; }
 
 .button {
   padding: .8em 1.2em;

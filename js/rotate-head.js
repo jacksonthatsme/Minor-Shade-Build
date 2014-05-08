@@ -26,10 +26,10 @@ function HeadImage(className){
     var thisClass = '#' + className;
     
     /* Calculating the borders of the image */
-    var imageLeft = $(thisClass).offset().left + 100;
+    var imageLeft = $(thisClass).offset().left + 150;
     var imageRight = imageLeft + $(thisClass).width() - 250;
     var imageTop = $(thisClass).offset().top + 100;
-    var imageBottom = imageTop + $(thisClass).height() - 200;
+    var imageBottom = imageTop + $(thisClass).height() - 300;
     
     /* This function determines where the mouse pointer is relative to the image
      * and displays the correct image accordingly. */
